@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROJ_HOME=~/SomeThingWeAre
+PROJ_HOME=~/git/SomeThingWeAre
 
 PORT=${1:-"8081"}
 JAVA=/usr/bin/java

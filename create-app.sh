@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PROJ_HOME=~/Documents/Workspaces/eclipse-workspace/SomeThingWeAre
+PROJ_HOME=~/git/SomeThingWeAre
 
 cd $PROJ_HOME
 
@@ -9,11 +9,12 @@ cp -r lib/* SomeThingWeAre.app/Contents/Java
 
 echo creating app jar
 cd bin
-jar cf ../SomeThingWeAre.jar *
+jar cvf ../SomeThingWeAre.jar *
 cd ..
 
 echo copying app jar
-cp SomeThingWeAre.jar SomeThingWeAre.app/Contents/Java
+mv SomeThingWeAre.jar SomeThingWeAre.app/Contents/Java
+#cp SomeThingWeAre.jar SomeThingWeAre.app/Contents/Java
 
 ls -l SomeThingWeAre.app/Contents/Java
 
