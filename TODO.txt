@@ -1,0 +1,97 @@
+tagged final version isea15
+
+DEPLOYMENT:
+	
+	-- Mac: disable all power-saving, sleep, auto-updates, virus-software, password-on-login
+	
+	-- Mac: enable auto-restart on crash with no login 
+	
+	-- install git, eclipse?
+	
+		$ git clone ssh://dev@rednoise.org/usr/local/git/share/gitrepos/SomeThingWeAre.git 
+
+	-- enable apache, setup symlink from /Library/WebServer/Documents/www to /Path/To/SomeThingWeAre/www/
+	  so that we can visit our index.html at localhost/www/ (you can test in browser over VNC)
+	  
+	    $ chmod -R 777 /Path/To/SomeThingWeAre /Path/To /Path 
+	    $ ln -s  /Path/To/SomeThingWeAre/www /Library/WebServer/Documents/www 
+	    
+	-- copy run-player.command into startup-items for default-login user 
+	
+	-- figure how best to put iPad into semi-kiosk mode (prohibit user from leaving our page)
+
+REMAINING:
+
+J: Pull my changes, then generate the cache files (first make sure you have a www/img/cache directory)
+J: Test interface on retina iPad with full-system (chrome browser)
+J: Figure how best to put iPad into semi-kiosk mode (stuck to our page) 
+J: [on it] Configuration of machine over VNC (see DEPLOYMENT above)
+J: Ideas for hiding menu bar (?) 
+J: Credits, 
+	-- fix typo 'geneative", 
+	-- change to 'Sally Chen', 
+	-- thank: "School of Creative Media, CityU Hong Kong"
+	-- add: "text by Daniel C. Howe"
+
+D: Fix bug on movie-start from interface ******* BAD ********
+D: fix jerky UI-slider
+
+D: add b/w option to colors (that is: a no tint option) 
+D: figure out hiding of menu-bar
+D: write osx-app generator script [done, but not quite working]
+
+
+TASK-LIST:
+
+Daniel:
+
+	** Timing: Recheck - **make all time stamps/image-change-triggers (per loop) 
+		so that they are calculated relative to start *only* of the audio**
+
+	** Remove (if still necessary) subtitling from "TITLE" and "CREDITS"
+	** Implement image flipping instead of noimage.jpg
+	** Test selected-image in SearchResult
+	
+	fix UI button functionality [done]
+	implement UI slider tracking/messaging [done] 
+	Provide John with credits/thanks information ! [done,above]
+	Fix Johns Cropping request #22 below [done]
+	Work out caching mechanism for images on ipad [done]
+  Check we are collecting embedded urls in SearchResult class [done]
+	Fix bug (see below) -- [Waiting on John's reply]
+	Check drop-down generation in interface [done]
+	Reply Sally about her design [done]
+	Write json search results to be sent to interface [done]
+	Change Google image [done]
+	Fix SomeGenerator bug (2nd below - we've seen it before, tries 4ever) [done]
+	Decide on and implement extra runtime memory (my sys: crash on 2nd loop) [done]
+	 disable tinting for the title and credits card/shots (also for any movies I think) [done]
+	
+	Test Test Test
+	
+John:
+	[done] List of Colors
+	[done] remove punctuation from phrases
+	[done] Contact ISEA guy about audio
+	[done] Finish phrase-counts file
+	[done] decide on keywords
+	[done] Find set of images (>	10) for the phrase “there had been books"
+	Create Title and Credits images (or delegate to Sally)
+	  - "generative movies based on an original short story by DCH"
+	[done] Select list of Colors (>=6) and [done] Keywords (~10)  [enter in SomeSuper.java]
+	Find/select some short movies that can be looped (>= length)
+	
+Optional:
+	** Multiple images per frames number in frames_key dir (let the program pick randomly)
+		this way if a user picks the same keywords twice, they don't get the same movie
+	
+
+BUGS:
+
+	Timing: Audio/Frame Sync ?
+
+	#22: when you arrange to do a crop, and you have to crop vertically (top and bottom) 
+	I think it might be better to move the image down a little rather than centering it
+	vertically before doing the crop in order to get more of the upper part of the original 
+	non-16:9 image (centering for a horizontal crop is fine)  [done]
+
