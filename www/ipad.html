@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body ontouchstart="">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<iframe class="video" src="" frameborder="0"></iframe>
+
+<div class="controller">
+  <div class="main">
+
+<a id="play-button">
+<svg version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="32px"
+   viewBox="0 0 54 63" enable-background="new 0 0 54 63" xml:space="preserve">
+<g id="bottom" transform="translate(793.000000, 1398.000000)" sketch:type="MSLayerGroup">
+  <path id="play-icon" sketch:type="MSShapeGroup" fill="#FFFFFF" d="M-787.74-1397.465c-2.372-1.423-4.295-0.342-4.295,2.414v56.06
+    c0,2.757,1.926,3.835,4.295,2.414l46.445-27.866c2.371-1.424,2.369-3.733,0-5.155L-787.74-1397.465z"/>
+</g>
+</svg>
+</a>
+
+<a id="stop-button">
+<svg version="1.1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="32px"
+   viewBox="0 0 44 64" enable-background="new 0 0 44 64" xml:space="preserve">
+<g id="Tablet-9_x2033_-Landscape-Copy" transform="translate(-77.000000, -1413.000000)" sketch:type="MSArtboardGroup" opacity="0.8">
+  <g id="bottom" transform="translate(71.000000, 1413.000000)" sketch:type="MSLayerGroup">
+    <g id="stop" transform="translate(6.000000, 0.000000)" sketch:type="MSShapeGroup">
+      <path id="rect1" fill="#FFFFFF" d="M3,0h10c1.657,0,3,1.343,3,3v58c0,1.656-1.343,3-3,3H3c-1.657,0-3-1.344-3-3V3
+        C0,1.343,1.343,0,3,0z"/>
+      <path id="rect2" fill="#FFFFFF" d="M30.5,0h10c1.656,0,3,1.343,3,3v58c0,1.656-1.344,3-3,3h-10
+        c-1.656,0-3-1.344-3-3V3C27.5,1.343,28.844,0,30.5,0z"/>
+    </g>
+  </g>
+</g>
+</svg>
+</a>
+
+<div class="currenttime"></div>
+<div class="timebar"></div>
+<p class="totaltime">05:23</p>
+
+  </div>
+    <div class="generatenewmenu">
+      
+    <div class="section">
+    <div class="current transition">Keyword<span class="triangle"></span></div>
+   <ul class="keyword dropdown">
+      <li>summer</li>
+      <li>love</li>
+      <li>world</li>
+   </ul>
+</div>
+
+<div class="section">
+
+     <div class="current transition">Color<span class="triangle"></span></div>
+      <ul class="color dropdown">
+      <li>red</li>
+      <li>yellow</li>
+      <li>orange</li>
+   </ul>
+   </div>
+
+    <div class="button" id="generatenew" >
+  <img src="img/icon.svg" alt=""> Generate
+  </div>
+
+  </div>
+
+
+
+</div>
+<!-- End of Controller -->
+
+
+</body>
+<script>
+// play or stop
+  $("#play-button").click(function(){
+    $(this).delay(300).fadeOut(300);
+    $("#stop-button").delay(300).fadeIn(300);
+});
+    $("#stop-button").click(function(){
+    $(this).delay(300).fadeOut(300);
+    $("#play-button").delay(300).fadeIn(300);
+});
+
+    $(".current").click(function(){
+    $(this).next(".dropdown").fadeToggle(300);
+    $(this).toggleClass("active");
+});
+    
+
+</script>
+
+</html>

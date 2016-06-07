@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="32px" viewBox="0 0 60 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 162</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Tablet-9″-Landscape" sketch:type="MSArtboardGroup" transform="translate(-1568.000000, -1429.000000)" fill="#000000">
+            <g id="bottom" sketch:type="MSLayerGroup" transform="translate(793.000000, 1398.000000)">
+                <g id="Generate-New" transform="translate(727.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M90.4347826,38.5883463 L90.4347826,33.9961002 C90.4347826,32.3342595 89.0912615,31 87.4339441,31 L51.0008385,31 C49.3400749,31 48,32.3413998 48,33.9961002 L48,60.0038998 C48,61.6657405 49.3435211,63 51.0008385,63 L87.4339441,63 C89.0947077,63 90.4347826,61.6586002 90.4347826,60.0038998 L90.4347826,55.6611723 L104.754971,61.8168973 C106.273949,62.4698506 107.507246,61.6586002 107.507246,60.0038998 L107.507246,33.9961002 C107.507246,32.3342595 106.283702,31.5438395 104.774383,32.2146995 L90.4347826,38.5883463 L90.4347826,38.5883463 Z M53,36 L85,36 L85,58 L53,58 L53,36 Z M85,46.0167885 L102,38 L102,55.5707058 L85,47.882699 L85,45.117995 L85,46.0167885 Z" id="Rectangle-162"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
