@@ -1,0 +1,30 @@
+Title % 00:00:00;00
+The % 00:00:01;15
+The room remained % 00:00:01;27
+remained dark. % 00:00:02;28
+There % 00:00:04;15
+There was little % 00:00:04;26
+that % 00:00:05;09
+that would benefit % 00:00:05;16
+from % 00:00:06;04
+from illumination. % 00:00:06;12
+A % 00:00:08;18
+A stone window % 00:00:09;03
+without % 00:00:09;26
+without glass. % 00:00:10;11
+A % 00:00:12;07
+A square bed % 00:00:12;19
+On % 00:00:13;05
+on casters. % 00:00:13;21
+A % 00:00:15;15
+A cistern % 00:00:15;25
+of % 00:00:16;11
+of leaves. % 00:00:16;23
+There % 00:00:18;19
+had % 00:00:19;00
+There had been books, % 00:00:19;08
+but % 00:00:21;01
+now % 00:00:21;10
+there % 00:00:22;04
+there were none. % 00:00:22;15
+none % 00:00:23;15
